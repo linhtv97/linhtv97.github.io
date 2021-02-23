@@ -1,12 +1,13 @@
 import React from 'react';
+import Application from "./pages/App/Application";
+import ApplicationProvider from "./app/ApplicationProvider";
 
 function App() {
     return (
-        <div className="text-center text-red-600">
-            <h1>Hello World</h1>
-            <p>I'm linhtv97</p>
-        </div>
-    );
+        <ApplicationProvider>
+            <Application/>
+        </ApplicationProvider>
+    )
 }
 
 export default App;
